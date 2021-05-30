@@ -1,0 +1,47 @@
+base_url = "https://example.com"
+title = "SuperBlog"
+default_language = "fr"
+
+theme = "DeepThought"
+
+generate_feed = true
+feed_filename = "rss.xml"
+taxonomies = [
+    { name = "categories", feed = true, paginate_by = 10 },
+    { name = "tags", fees = true, paginate_by = 10 },
+]
+languages = []
+
+compile_sass = false
+build_search_index = true
+ignored_content = []
+extra_syntaxes = []
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[translations]
+
+[extra]
+navbar_items = [
+    { code = "fr", nav_items = [
+        { url = "$BASE_URL/", name = "À propos" },
+        { url = "$BASE_URL/posts", name = "Posts" },
+        { url = "$BASE_URL/tags", name = "Tags" },
+        { url = "$BASE_URL/categories", name = "Categories" },
+    ] },
+]
+
+[extra.author]
+name = "TODO NOM"
+#avatar = "/images/avatar.png"
+
+[extra.social]
+
+[extra.analytics]
+
+[extra.commenting]
+
+[extra.mapbox]
